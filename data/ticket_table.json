@@ -1,0 +1,28 @@
+{
+	 "20200611-G001" : { 
+		"booking_code" : "KFG4",
+		"pessenger" : {
+			"title" : "Mr.",
+			"front_name" : "Lopiga",
+			"last_name" : "Parulian"
+		},
+		"origin" : {
+			"city" : "Jakarta",
+			"airport" : "CGK"	
+		},
+		"destination" : {
+			"city" : " Palembang",
+			"airport" : "PLM"
+		},
+		"time" : {
+			"check_in" : "10.30",
+			"boarding" : "11.35",
+			"arrival" : "12.20"
+		},
+		"terminal" : "3",
+		"gate" : "4G",
+		"airline" : "Garuda Indonesia",
+		"seat" : "13B",
+		"class" : "Buissnes",
+		"baggage" : 21
+	}
