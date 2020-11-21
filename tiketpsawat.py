@@ -63,18 +63,18 @@ def view_contacts():
         print("MAAF BELUM ADA TIKET TERSIMPAN")
     input("Tekan ENTER untuk kembali ke MENU")
  
-def create_id_contact(jam, tanggal, gate, kursi):
+def create_id_ticket(jam, tanggal, gate, kursi):
     hari_ini = datetime.now()
     tahun = hari_ini.year
     bulan = hari_ini.month
     hari = hari_ini.day
  
-    counter = len(contacts) + 1
+    counter = len(ticket) + 1
     first = name[0].upper()
     last_4 = phone[-4:]
     
     id_contact = ("%04d%02d%02d-C%03d%s%s" % (tahun, bulan, hari, counter, first, last_4))
-    return id_contact
+    return id_ticket
  
 def add_ticket():
     print_header("MENAMBAHKAN TIKET BARU")
@@ -210,6 +210,7 @@ def update_ticket_gate():
         print_data(new_chair)
     else:
         print("Data Batal diubah")
+
 def update_ticket():
     print_header("MENGUPDATE INFO TIKET")
     nopes = input("Nomor Tiket yang akan di-update : ")
@@ -278,4 +279,3 @@ while not stop:
     print_menu()
     user_input = input("Pilihan : ")
     stop = check_user_input(user_input)
- 
