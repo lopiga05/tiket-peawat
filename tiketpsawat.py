@@ -248,13 +248,13 @@ def check_user_input(char):
     elif char == "1":
         view_()
     elif char == "2":
-        add_contact()
+        add_ticket()
     elif char == "3":
-        find_contact()
+        find_ticket()
     elif char == "4":
-        delete_contact()
+        delete_ticket()
     elif char == "5":
-        update_contact()
+        update_ticket()
     elif char == "6":
         pass
  
